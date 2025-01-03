@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent { label 'slave02' }
 
     environment {
         JAVA_HOME = '/usr/lib/jvm/java-17-openjdk-amd64'
