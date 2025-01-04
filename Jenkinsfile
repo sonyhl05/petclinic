@@ -12,7 +12,7 @@ pipeline {
         stage('build') {
             steps {
                 script {
-                buildtest()
+                 buildtest()
                 }
             }
         }
