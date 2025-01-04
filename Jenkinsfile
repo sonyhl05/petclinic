@@ -9,9 +9,11 @@ pipeline {
         PATH = "${JAVA_HOME}/bin:${MAVEN_HOME}/bin:${env.PATH}"
     }
     stages {
-        stage('Checkout Code') {
+        stage('build') {
             steps {
+                script {
                 buildProject()
+                }
             }
         }
 }
