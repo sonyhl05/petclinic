@@ -40,8 +40,8 @@ pipeline {
         stage('upload artifact ') {
             steps {
                 script {
-                 buildtest.uploadArtifact()
-                }
+                 buildtest.uploadArtifact('target/*.jar')
+                } 
             }
         } 
         stage('run application ') {
